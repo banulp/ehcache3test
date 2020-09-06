@@ -12,5 +12,9 @@
 <!--            store list onto heap with a maximum size of 10 -->
             <heap unit="kB">10</heap>
         </resources>
+<!--        <heap-store-settings>-->
+<!--            <max-object-graph-size>2000</max-object-graph-size>-->
+<!--            <max-object-size unit="kB">5</max-object-size>-->
+<!--        </heap-store-settings>-->
     </cache>
 </config>
