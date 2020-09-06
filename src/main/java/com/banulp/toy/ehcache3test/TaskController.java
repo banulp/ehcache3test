@@ -18,6 +18,12 @@ public class TaskController {
         return byIsbn;
     }
 
+    @RequestMapping("evictAll")
+    public String evictAll() {
+        String s = simpleBookRepository.evictAll();
+        return s;
+    }
+
     @RequestMapping("message")
     public String message() {
         return "Hello world. ehcache3test message.";

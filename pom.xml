@@ -56,6 +56,17 @@
 			</exclusions>
 		</dependency>
 
+<!--	ehcache 3 : https://dimitr.im/spring-boot-cache-ehcache	-->
+<!--		3:org.ehcache, 2: net.sf.ehcache-->
+		<dependency>
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.cache</groupId>
+			<artifactId>cache-api</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
