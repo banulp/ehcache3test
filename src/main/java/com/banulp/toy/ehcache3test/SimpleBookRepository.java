@@ -12,12 +12,12 @@ public class SimpleBookRepository implements BookRepository {
 	@Override
 	@Cacheable(value = "books", key = "#isbn")
 	public Book getByIsbn(String isbn) {
-		log.info("getByIsbn is invoked!!!");
+		log.info("getByIsbn is invoked!!! - {}", isbn);
 		return new Book(isbn, "Some book");
 	}
 
 	@CacheEvict(value="books", allEntries=true)
 	public String evictAll(){
-		return "success";
+		return "evictBooks success";
 	}
 }

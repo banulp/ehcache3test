@@ -17,4 +17,24 @@
 <!--            <max-object-size unit="kB">5</max-object-size>-->
 <!--        </heap-store-settings>-->
     </cache>
+    <cache alias="flowers">
+        <key-type>java.lang.String</key-type>
+        <value-type>com.banulp.toy.ehcache3test.Flower</value-type>
+        <expiry>
+            <ttl unit="minutes">5</ttl>
+        </expiry>
+        <resources>
+            <heap unit="kB">10</heap>
+        </resources>
+    </cache>
+    <cache alias="songs">
+        <key-type>java.lang.String</key-type>
+        <value-type>com.banulp.toy.ehcache3test.Song</value-type>
+        <expiry>
+            <ttl unit="minutes">5</ttl>
+        </expiry>
+        <resources>
+            <heap unit="kB">10</heap>
+        </resources>
+    </cache>
 </config>
